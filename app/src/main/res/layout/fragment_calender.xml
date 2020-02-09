@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <sun.bob.mcalendarview.MCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_marginTop="64dp"
+        android:id="@+id/calendar"
+        android:background="#e6e4e4"
+        >
+
+
+
+    </sun.bob.mcalendarview.MCalendarView>
+   <!-- <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_marginTop="64dp"
+        android:background="#d3d3d3"
+        />-->
+</RelativeLayout>

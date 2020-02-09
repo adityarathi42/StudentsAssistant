@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"> <!--IMPORTANT otherwise backgrnd img. will not fill the whole screen -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundcolor"
+        android:backgroundTint="#E6E4E4"
+        tools:context=".DemoFragment"
+        tools:ignore="ExtraText"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="170dp">
+       android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="4dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:background="?attr/cardbackground"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/company1"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:text="COMPANY: Samsung"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/event1"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="16dp"
+                    android:text="EVENT: Pre-Placement Talk "
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/venue1"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginRight="16dp"
+                    android:text="VENUE: LT-05"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DATE AND TIME: 28th Aug, 5 PM"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dress1"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DRESS CODE: Formals"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:onClick="swi"></Switch>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="180dp"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:background="?attr/cardbackground"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+                <TextView
+                    android:id="@+id/company2"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:text="COMPANY: Amazon"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/event2"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="16dp"
+                    android:text="EVENT: Technical Round "
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/venue2"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginRight="16dp"
+                    android:text="VENUE: CP-1"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DATE AND TIME: 5th Sept, 7 PM"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dress2"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DRESS CODE: Smart Casuals"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:onClick="swi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"></Switch>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="355dp"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:background="?attr/cardbackground"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/company3"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:text="COMPANY: Addverb Technologies"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/event3"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="16dp"
+                    android:text="EVENT: Technical Round "
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/venue3"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginRight="16dp"
+                    android:text="VENUE: CP-2"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DATE AND TIME: 15th Sept, 6 PM"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dress3"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginRight="16dp"
+                    android:text="DRESS CODE: Smart Casuals"
+                    android:textColor="#141414"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+                <Switch
+                    android:id="@+id/switch3"
+                    android:onClick="swi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"></Switch>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
